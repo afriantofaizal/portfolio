@@ -112,8 +112,7 @@ body {
       right: 0;
       width: 100%;
       height: 100%;
-      z-index: -1;
-      background: rgba(68, 68, 68, 0.3); }
+      z-index: -1; }
 
 path {
   stroke: #fff;
@@ -168,7 +167,7 @@ main {
     width: 6%;
     min-width: 60px;
     margin-left: 2.8rem;
-    margin-top: 5rem; }
+    margin-top: 3rem; }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -182,7 +181,7 @@ main {
       margin-top: 20vh; }
 
 .about-info {
-  font-family: cursive;
+  font-family: cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: justify;
   margin-top: -1rem;
   display: grid;
@@ -207,7 +206,8 @@ main {
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
-    border-bottom: #ecd02c 10px solid; }
+    border-bottom: #ecd02c 10px solid;
+    border-radius: 2px; }
 
 .projects {
   display: grid;
@@ -215,20 +215,22 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
-    border: 5px whitesmoke solid; }
+    border: 5px whitesmoke solid;
+    border-radius: 2px; }
     .projects img:hover {
-      opacity: 0.5;
+      opacity: 0.7;
       border-color: #ecd02c;
       transition: all 1s ease-out; }
 
 .btn, .btn-dark, .btn-light {
-  font-family: cursive;
+  font-family: cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   display: block;
   padding: 0.4rem;
   border: 0;
   margin-bottom: 0.3rem;
-  border: #ecd02c 5px solid; }
+  border: #ecd02c 5px solid;
+  border-radius: 2px; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #ecd02c;
     padding: 0.4rem 1rem;
@@ -336,10 +338,14 @@ main {
     grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
+  html {
+    font-size: 15px; }
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
+  html {
+    font-size: 12px; }
   main {
     align-items: center;
     text-align: center; }
@@ -367,12 +373,12 @@ main {
       height: 130px; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
-    grid-template-columns: 1fr; }
-  .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
+  html {
+    font-size: 10px; }
   main#home h1 {
     margin-top: 10vh; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: repeat(2, 1fr); } }
