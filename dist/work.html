@@ -13,7 +13,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <title>AfriantoFaizal - My Work</title>
+    <link
+      href="../node_modules/lightbox2/dist/css/lightbox.css"
+      rel="stylesheet"
+    />
+    <title>Faizal - My Work</title>
   </head>
 
   <body>
@@ -58,82 +62,122 @@
 
       <div class="projects">
         <div class="item">
-          <img
-            id="myImg"
-            onclick="myFunc(this)"
-            src="img/projects/project1.jpg"
-            alt="Vexel Art with Photoshop"
-          />
-          <a href="#!" class="btn-dark">
+          <a
+            href="img/projects/project1.jpg"
+            data-lightbox="mygallery"
+            data-title="Vexel Art with Photoshop | the end of the f***in world"
+          >
+            <img src="img/projects/project1.jpg" />
+          </a>
+          <a
+            href="https://id.pinterest.com/pin/730357264550088409/"
+            class="btn-dark"
+            target="_blank"
+          >
             <i class="fab fa-pinterest"></i> Pinterest
           </a>
         </div>
 
         <div class="item">
-          <img
-            id="myImg"
-            onclick="myFunc(this)"
-            src="img/projects/project2.jpg"
-            alt="Responsive Web Design Portfolio"
-          />
-          <a href="#!" class="btn-dark">
+          <a
+            href="img/projects/project2.jpg"
+            data-lightbox="mygallery"
+            data-title="Responsive Web Design Portfolio"
+          >
+            <img src="img/projects/project2.jpg" />
+          </a>
+          <a
+            href="https://github.com/afriantofaizal/portfolio"
+            class="btn-dark"
+            target="_blank"
+          >
             <i class="fab fa-github"></i> Github
           </a>
         </div>
 
         <div class="item">
-          <img
-            id="myImg"
-            onclick="myFunc(this)"
-            src="img/projects/project3.jpg"
-            alt="Web Design Template with XD"
-          />
-          <a href="#!" class="btn-dark">
+          <a
+            href="img/projects/project3.jpg"
+            data-lightbox="mygallery"
+            data-title="Web Design Template with XD"
+          >
+            <img src="img/projects/project3.jpg" />
+          </a>
+          <a
+            href="https://id.pinterest.com/afriantofaizal/web-design/"
+            class="btn-dark"
+            target="_blank"
+          >
             <i class="fab fa-pinterest"></i> Pinterest
           </a>
         </div>
 
         <div class="item">
-          <img
-            id="myImg"
-            onclick="myFunc(this)"
-            src="img/projects/project4.jpg"
-            alt="Band Profile Web Design with Blog System using Laravel"
-          />
-          <a href="#!" class="btn-dark">
+          <a
+            href="img/projects/project4.jpg"
+            data-lightbox="mygallery"
+            data-title="Band Profile Web Design with Blog System using Laravel"
+          >
+            <img src="img/projects/project4.jpg" />
+          </a>
+          <a
+            href="https://github.com/afriantofaizal/bandprofile"
+            class="btn-dark"
+            target="_blank"
+          >
             <i class="fab fa-github"></i> Github
           </a>
         </div>
 
         <div class="item">
-          <img
-            id="myImg"
-            onclick="myFunc(this)"
-            src="img/projects/project5.jpg"
-            alt="Vexel Art with Photoshop"
-          />
-          <a href="#!" class="btn-dark">
+          <a
+            href="img/projects/project5.jpg"
+            data-lightbox="mygallery"
+            data-title="Vexel Art with Photoshop"
+          >
+            <img src="img/projects/project5.jpg" />
+          </a>
+          <a
+            href="https://id.pinterest.com/pin/730357264550088522/"
+            class="btn-dark"
+            target="_blank"
+          >
+            <i class="fab fa-pinterest"></i> Pinterest
+          </a>
+        </div>
+
+        <div class="item">
+          <a
+            href="img/projects/project6.jpg"
+            data-lightbox="mygallery"
+            data-title="Vexel Art with Photoshop | 500 days of summer"
+          >
+            <img src="img/projects/project6.jpg" />
+          </a>
+          <a
+            href="https://id.pinterest.com/pin/730357264550525049/"
+            class="btn-dark"
+            target="_blank"
+          >
             <i class="fab fa-pinterest"></i> Pinterest
           </a>
         </div>
       </div>
     </main>
 
-    <div id="myModal" class="modal">
-      <!-- The Close Button -->
-      <span class="close" onclick="modal.style.display = 'none'">&times;</span>
-
-      <!-- Modal Content (The Image) -->
-      <img class="modal-content" id="img01" />
-
-      <!-- Modal Caption (Image Text) -->
-      <div id="caption"></div>
-    </div>
-
     <footer id="main-footer">
       Copyright &copy; 2019
     </footer>
 
     <script src="js/main.js"></script>
+
+    <script src="../node_modules/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+
+    <script>
+      lightbox.option({
+        resizeDuration: 200,
+        wrapAround: false,
+      });
+    </script>
   </body>
 </html>
