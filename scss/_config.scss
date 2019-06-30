@@ -42,7 +42,7 @@ $home-image: url(../img/bg.jpg);
 @mixin mediaSm {
   @media screen and (max-width: 500px) {
     html {
-      font-size: 10px;
+      font-size: 12px;
     }
     @content;
   }
@@ -52,7 +52,7 @@ $home-image: url(../img/bg.jpg);
 @mixin mediaMd {
   @media screen and (max-width: 768px) {
     html {
-      font-size: 12px;
+      font-size: 14px;
     }
     @content;
   }
@@ -62,7 +62,7 @@ $home-image: url(../img/bg.jpg);
 @mixin mediaLg {
   @media screen and (min-width: 769px) and (max-width: 1170px) {
     html {
-      font-size: 15px;
+      font-size: 16px;
     }
     @content;
   }
