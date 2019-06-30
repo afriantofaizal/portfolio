@@ -184,7 +184,7 @@ main {
       margin-top: 20vh; }
 
 .about-info {
-  font-family: cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: monospace, sans-serif;
   text-align: justify;
   margin-top: -1rem;
   display: grid;
@@ -227,7 +227,7 @@ main {
       transition: all 1s ease-out; }
 
 .btn, .btn-dark, .btn-light {
-  font-family: cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: monospace, sans-serif;
   text-align: center;
   display: block;
   padding: 0.4rem;
