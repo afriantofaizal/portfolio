@@ -99,7 +99,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: 'Press Start 2P', monospace;
   line-height: 1.2; }
   body#bg-img {
     background: url(../img/bg.jpg);
@@ -136,16 +136,19 @@ path {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0; }
   h1.lg-heading,
   h2.lg-heading,
-  h3.lg-heading {
+  h3.lg-heading,
+  h4.lg-heading {
     font-size: 2.2rem;
     text-shadow: 4px 4px #373737; }
   h1.sm-heading,
   h2.sm-heading,
-  h3.sm-heading {
+  h3.sm-heading,
+  h4.sm-heading {
     margin-bottom: 2rem;
     text-shadow: 2.5px 2.5px #373737; }
 
