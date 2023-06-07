@@ -1,0 +1,214 @@
+@import 'config';
+@import 'menu';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include background;
+  background: $primary-color;
+  color: set-text-color($primary-color);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', monospace;
+  line-height: 1.2;
+}
+
+path {
+  stroke: #fff;
+  fill: #fff;
+  stroke-dasharray: 1800;
+  opacity: 10;
+  animation: animate 3s cubic-bezier(0.5, 0.23, 1, 0.1);
+}
+
+@keyframes animate {
+  0% {
+    fill: none;
+    stroke-dashoffset: 1800;
+  }
+  30% {
+    fill: none;
+    stroke-dasharray: 1800;
+  }
+  90% {
+    fill: rgba(255, 255, 255, 0);
+  }
+  100% {
+    fill: rgba(255, 255, 255, 1);
+    stroke-dashoffset: 0;
+  }
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+
+  &.lg-heading {
+    font-size: 2.2rem;
+    text-shadow: 4px 4px rgb(55, 55, 55);
+  }
+
+  &.sm-heading {
+    margin-bottom: 2rem;
+    text-shadow: 2.5px 2.5px rgb(55, 55, 55);
+  }
+}
+
+a {
+  color: set-text-color($primary-color);
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+main {
+  padding: 5.1rem;
+  height: 100%;
+  min-height: calc(100vh - 0px);
+
+  .wrapper {
+    transform: translate(-50%, -50%);
+    width: 6%;
+    min-width: 60px;
+    margin-left: 2.8rem;
+    margin-top: 3rem;
+  }
+
+  .icons {
+    margin-top: 1rem;
+
+    a {
+      padding: 0.4rem;
+
+      &:hover {
+        color: $secondary-color;
+        @include easeOut();
+      }
+    }
+  }
+
+  &#home {
+    overflow: hidden;
+    h1 {
+      margin-top: 20vh;
+    }
+  }
+}
+
+// page about
+.about-info {
+  font-family: monospace, sans-serif;
+  text-align: justify;
+  margin-top: -1rem;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    'bioimage bio bio'
+    'job1 job2 job3';
+  grid-template-columns: repeat(3, 1fr);
+
+  .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: $secondary-color 5px solid;
+  }
+
+  .bio {
+    grid-area: bio;
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+
+  .job-1 {
+    grid-area: job1;
+  }
+
+  .job-2 {
+    grid-area: job2;
+  }
+
+  .job-3 {
+    grid-area: job3;
+  }
+
+  .job {
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: $secondary-color 10px solid;
+    border-radius: 2px;
+  }
+}
+
+// page work
+.projects {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+    border: 5px set-text-color($primary-color) solid;
+    border-radius: 2px;
+
+    &:hover {
+      opacity: 0.7;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}
+
+//button style
+.btn {
+  font-family: monospace, sans-serif;
+  text-align: center;
+  display: block;
+  padding: 0.4rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  border: $secondary-color 5px solid;
+  border-radius: 2px;
+
+  &:hover {
+    background: $secondary-color;
+    padding: 0.4rem 1rem;
+    color: set-text-color($secondary-color);
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color, 5);
+  color: set-text-color($primary-color);
+}
+
+.btn-light {
+  @extend .btn;
+  background: lighten($primary-color, 10);
+  color: set-text-color($primary-color);
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: darken($primary-color, 10);
+  color: set-text-color($primary-color);
+  height: 70px;
+}
+
+@import 'mobile';
