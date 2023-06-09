@@ -191,8 +191,13 @@ main {
   text-align: justify;
   margin-top: 4.5rem;
   display: grid;
+<<<<<<< HEAD
+  grid-gap: 30px;
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+=======
   grid-gap: 40px;
   grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+>>>>>>> 06a16db6229fd7f02901a845216adeaf09f4caea
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
