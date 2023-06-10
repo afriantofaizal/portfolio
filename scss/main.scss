@@ -113,9 +113,9 @@ main {
 .about-info {
   font-family: monospace, sans-serif;
   text-align: justify;
-  margin-top: 4.5rem;
+  margin-top: -1rem;
   display: grid;
-  grid-gap: 40px;
+  grid-gap: 30px;
   grid-template-areas:
     "bioimage bio bio"
     "job1 job2 job3";
@@ -148,7 +148,7 @@ main {
 
   .job {
     background: lighten($primary-color, 5);
-    padding: 1em;
+    padding: 0.5rem;
     border-bottom: $secondary-color 10px solid;
     border-radius: 2px;
   }
