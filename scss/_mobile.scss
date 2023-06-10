@@ -49,20 +49,20 @@
     transform: translate3d(100%, 0, 0);
 
     .portrait {
-      background: url('../img/mobile_portrait.jpg');
-      width: 130px;
-      height: 130px;
+      background: url("../img/faizal_afrianto_mobile.png");
+      width: 150px;
+      height: 150px;
     }
   }
 
   //about page
   .about-info {
     grid-template-areas:
-      'bioimage'
-      'bio'
-      'job1'
-      'job2'
-      'job3';
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
 
     grid-template-columns: 1fr;
   }

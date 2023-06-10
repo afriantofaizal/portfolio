@@ -40,14 +40,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #111111;
+    background: black;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 1s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #444;
+    background: #1e1e1e;
     transform: translate3d(0, 100%, 0);
     transition: all 1s ease-out; }
     .menu-branding.show {
@@ -55,7 +55,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/portrait.jpg");
+      background: url("../img/faizal_afrianto.png");
       border-radius: 50%;
       border: solid 5px #ecd02c; }
   .menu .nav-item {
@@ -94,7 +94,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #444;
+  background: #1e1e1e;
   color: whitesmoke;
   height: 100%;
   margin: 0;
@@ -106,7 +106,7 @@ body {
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       right: 0;
@@ -150,6 +150,7 @@ h4 {
   h3.sm-heading,
   h4.sm-heading {
     margin-bottom: 2rem;
+    margin-top: 1rem;
     text-shadow: 2.5px 2.5px #373737; }
 
 a {
@@ -188,7 +189,7 @@ main {
 
 .about-info {
   font-family: monospace, sans-serif;
-  text-align: justify;
+  text-align: left;
   margin-top: 4.5rem;
   display: grid;
   grid-gap: 40px;
@@ -209,8 +210,10 @@ main {
     grid-area: job2; }
   .about-info .job-3 {
     grid-area: job3; }
+  .about-info .text-tertiary {
+    color: #e5e5e5; }
   .about-info .job {
-    background: #515151;
+    background: #2b2b2b;
     padding: 1em;
     border-bottom: #ecd02c 10px solid;
     border-radius: 2px; }
@@ -218,15 +221,21 @@ main {
 .projects {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 3rem; }
   .projects img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
     width: 100%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
     border: 5px whitesmoke solid;
     border-radius: 2px; }
     .projects img:hover {
-      opacity: 0.7;
-      border-color: #ecd02c;
-      transition: all 1s ease-out; }
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05);
+      background-image: #e9ca15;
+      border-color: #ecd02c; }
 
 .btn, .btn-dark, .btn-light {
   font-family: monospace, sans-serif;
@@ -243,17 +252,18 @@ main {
     color: #444; }
 
 .btn-dark {
-  background: #373737;
-  color: whitesmoke; }
+  background: #111111;
+  color: whitesmoke;
+  margin-top: 0.5rem; }
 
 .btn-light {
-  background: #5e5e5e;
+  background: #383838;
   color: whitesmoke; }
 
 #main-footer {
   text-align: center;
   padding: 1.5rem;
-  background: #2b2b2b;
+  background: #111111;
   color: whitesmoke;
   height: 70px; }
 
@@ -296,11 +306,11 @@ main {
     height: 40vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/mobile_portrait.jpg");
-      width: 130px;
-      height: 130px; }
+      background: url("../img/faizal_afrianto_mobile.png");
+      width: 150px;
+      height: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
