@@ -224,17 +224,19 @@ main {
   grid-template-columns: repeat(3, 1fr);
   margin-top: 3rem; }
   .projects img {
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -webkit-transform: opacity scale(1);
+    transform: opacity scale(1);
     width: 100%;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     border: 5px whitesmoke solid;
-    border-radius: 2px; }
+    border-radius: 2px;
+    opacity: 1;
+    background: none; }
     .projects img:hover {
       -webkit-transform: scale(1.05);
       transform: scale(1.05);
-      background-image: #e9ca15;
+      opacity: 0.5;
       border-color: #ecd02c; }
 
 .btn, .btn-dark, .btn-light {
